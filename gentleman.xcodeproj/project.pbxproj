@@ -12,6 +12,16 @@
 		87B65888195FD95700AD00D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B65887195FD95700AD00D6 /* AppDelegate.swift */; };
 		87B6588A195FD95700AD00D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B65889195FD95700AD00D6 /* Images.xcassets */; };
 		87B65896195FD95700AD00D6 /* gentlemanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B65895195FD95700AD00D6 /* gentlemanTests.swift */; };
+		87B658A5195FDC0000AD00D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658A4195FDC0000AD00D6 /* User.swift */; };
+		87B658A7195FDC6200AD00D6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658A6195FDC6200AD00D6 /* Event.swift */; };
+		87B658A9195FDCCB00AD00D6 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658A8195FDCCB00AD00D6 /* Bet.swift */; };
+		87B658AB195FDE7100AD00D6 /* GNMockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658AA195FDE7100AD00D6 /* GNMockAPI.swift */; };
+		87B658AE195FE2DB00AD00D6 /* friends.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B658AD195FE2DB00AD00D6 /* friends.json */; };
+		87B658B0195FE3BA00AD00D6 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B658AF195FE3BA00AD00D6 /* users.json */; };
+		87B658B2195FE3C900AD00D6 /* bets.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B658B1195FE3C900AD00D6 /* bets.json */; };
+		87B658B4195FEA6400AD00D6 /* GNCreateBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658B3195FEA6400AD00D6 /* GNCreateBetViewController.swift */; };
+		87B658B6195FEB6D00AD00D6 /* CNCreateBetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658B5195FEB6D00AD00D6 /* CNCreateBetView.swift */; };
+		87B658B8195FF9A300AD00D6 /* GNRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658B7195FF9A300AD00D6 /* GNRootNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,16 @@
 		87B6588F195FD95700AD00D6 /* gentlemanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gentlemanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B65894195FD95700AD00D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B65895195FD95700AD00D6 /* gentlemanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gentlemanTests.swift; sourceTree = "<group>"; };
+		87B658A4195FDC0000AD00D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		87B658A6195FDC6200AD00D6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Models/Event.swift; sourceTree = "<group>"; };
+		87B658A8195FDCCB00AD00D6 /* Bet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bet.swift; path = Models/Bet.swift; sourceTree = "<group>"; };
+		87B658AA195FDE7100AD00D6 /* GNMockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GNMockAPI.swift; path = Controllers/GNMockAPI.swift; sourceTree = "<group>"; };
+		87B658AD195FE2DB00AD00D6 /* friends.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = friends.json; path = Data/friends.json; sourceTree = "<group>"; };
+		87B658AF195FE3BA00AD00D6 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = Data/users.json; sourceTree = "<group>"; };
+		87B658B1195FE3C900AD00D6 /* bets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bets.json; path = Data/bets.json; sourceTree = "<group>"; };
+		87B658B3195FEA6400AD00D6 /* GNCreateBetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GNCreateBetViewController.swift; path = ViewControllers/GNCreateBetViewController.swift; sourceTree = "<group>"; };
+		87B658B5195FEB6D00AD00D6 /* CNCreateBetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CNCreateBetView.swift; path = Views/CNCreateBetView.swift; sourceTree = "<group>"; };
+		87B658B7195FF9A300AD00D6 /* GNRootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GNRootNavigationController.swift; path = ViewControllers/GNRootNavigationController.swift; sourceTree = "<group>"; };
 		A8CAF12B51734BA595F8E0B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E624E9E7AA434F6398DB6F84 /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +102,12 @@
 		87B65884195FD95700AD00D6 /* gentleman */ = {
 			isa = PBXGroup;
 			children = (
+				87B658A1195FDBA100AD00D6 /* Controllers */,
+				87B658AC195FE2A800AD00D6 /* Data */,
+				87B658A2195FDBA800AD00D6 /* DataSources */,
+				87B658A3195FDBB400AD00D6 /* Models */,
+				87B6589F195FDB4300AD00D6 /* ViewControllers */,
+				87B658A0195FDB9500AD00D6 /* Views */,
 				87B65887195FD95700AD00D6 /* AppDelegate.swift */,
 				87B65889195FD95700AD00D6 /* Images.xcassets */,
 				87B65885195FD95700AD00D6 /* Supporting Files */,
@@ -112,6 +138,58 @@
 				87B65894195FD95700AD00D6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87B6589F195FDB4300AD00D6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				87B658B3195FEA6400AD00D6 /* GNCreateBetViewController.swift */,
+				87B658B7195FF9A300AD00D6 /* GNRootNavigationController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		87B658A0195FDB9500AD00D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87B658B5195FEB6D00AD00D6 /* CNCreateBetView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		87B658A1195FDBA100AD00D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87B658AA195FDE7100AD00D6 /* GNMockAPI.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		87B658A2195FDBA800AD00D6 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		87B658A3195FDBB400AD00D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87B658A4195FDC0000AD00D6 /* User.swift */,
+				87B658A6195FDC6200AD00D6 /* Event.swift */,
+				87B658A8195FDCCB00AD00D6 /* Bet.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		87B658AC195FE2A800AD00D6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				87B658AD195FE2DB00AD00D6 /* friends.json */,
+				87B658AF195FE3BA00AD00D6 /* users.json */,
+				87B658B1195FE3C900AD00D6 /* bets.json */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		FCC4ECAC28674C6ABCF60500 /* Frameworks */ = {
@@ -206,7 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B658B0195FE3BA00AD00D6 /* users.json in Resources */,
 				87B6588A195FD95700AD00D6 /* Images.xcassets in Resources */,
+				87B658AE195FE2DB00AD00D6 /* friends.json in Resources */,
+				87B658B2195FE3C900AD00D6 /* bets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +368,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B658B8195FF9A300AD00D6 /* GNRootNavigationController.swift in Sources */,
+				87B658A5195FDC0000AD00D6 /* User.swift in Sources */,
+				87B658A7195FDC6200AD00D6 /* Event.swift in Sources */,
 				87B65888195FD95700AD00D6 /* AppDelegate.swift in Sources */,
+				87B658B4195FEA6400AD00D6 /* GNCreateBetViewController.swift in Sources */,
+				87B658A9195FDCCB00AD00D6 /* Bet.swift in Sources */,
+				87B658B6195FEB6D00AD00D6 /* CNCreateBetView.swift in Sources */,
+				87B658AB195FDE7100AD00D6 /* GNMockAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
