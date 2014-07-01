@@ -2,7 +2,7 @@
 
 import UIKit
 
-class CNCreateBetViewController: UIViewController {
+class GNCreateBetViewController: UIViewController {
 
   var user: User
 
@@ -13,8 +13,8 @@ class CNCreateBetViewController: UIViewController {
   }
 
   override func loadView() {
-    //var view: UIView = CNCreateBetViewManual(user: user)
-    var view: UIView = GNCreateBetView(frame: CGRectZero)
+    var view: UIView = GNCreateBetViewManual(user: user)
+    //var view: UIView = GNCreateBetView(user: user)
     self.view = view
   }
 

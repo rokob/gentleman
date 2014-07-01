@@ -2,7 +2,7 @@
 
 import UIKit
 
-class CNCreateBetViewManual: UIScrollView, UITextViewDelegate {
+class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
 
   struct Subviews {
     let opponentLabel: UILabel

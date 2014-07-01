@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
 
     var user = User(id: "1", name: "Andy Ledvina", image_url: "http://www.fake.fkae", email: "a@b.c", phone: nil, token: "1009jfkdjf093AA")
-    var viewController = CNCreateBetViewController(user: user)
+    var viewController = GNCreateBetViewController(user: user)
 
     var navigationVC = GNRootNavigationController(rootViewController: viewController)
     self.window!.rootViewController = navigationVC

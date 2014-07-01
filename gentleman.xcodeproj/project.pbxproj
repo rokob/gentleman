@@ -22,7 +22,7 @@
 		87B658B0195FE3BA00AD00D6 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B658AF195FE3BA00AD00D6 /* users.json */; };
 		87B658B2195FE3C900AD00D6 /* bets.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B658B1195FE3C900AD00D6 /* bets.json */; };
 		87B658B4195FEA6400AD00D6 /* GNCreateBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658B3195FEA6400AD00D6 /* GNCreateBetViewController.swift */; };
-		87B658B6195FEB6D00AD00D6 /* CNCreateBetViewManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658B5195FEB6D00AD00D6 /* CNCreateBetViewManual.swift */; };
+		87B658B6195FEB6D00AD00D6 /* GNCreateBetViewManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658B5195FEB6D00AD00D6 /* GNCreateBetViewManual.swift */; };
 		87B658B8195FF9A300AD00D6 /* GNRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B658B7195FF9A300AD00D6 /* GNRootNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		87B658AF195FE3BA00AD00D6 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = Data/users.json; sourceTree = "<group>"; };
 		87B658B1195FE3C900AD00D6 /* bets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bets.json; path = Data/bets.json; sourceTree = "<group>"; };
 		87B658B3195FEA6400AD00D6 /* GNCreateBetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GNCreateBetViewController.swift; path = ViewControllers/GNCreateBetViewController.swift; sourceTree = "<group>"; };
-		87B658B5195FEB6D00AD00D6 /* CNCreateBetViewManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CNCreateBetViewManual.swift; path = Views/CNCreateBetViewManual.swift; sourceTree = "<group>"; };
+		87B658B5195FEB6D00AD00D6 /* GNCreateBetViewManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GNCreateBetViewManual.swift; path = Views/GNCreateBetViewManual.swift; sourceTree = "<group>"; };
 		87B658B7195FF9A300AD00D6 /* GNRootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GNRootNavigationController.swift; path = ViewControllers/GNRootNavigationController.swift; sourceTree = "<group>"; };
 		A8CAF12B51734BA595F8E0B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E624E9E7AA434F6398DB6F84 /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,7 @@
 		87B658A0195FDB9500AD00D6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				87B658B5195FEB6D00AD00D6 /* CNCreateBetViewManual.swift */,
+				87B658B5195FEB6D00AD00D6 /* GNCreateBetViewManual.swift */,
 				879BCD0E1961CE3A0036F9FB /* GNCreateBetView.xib */,
 				879BCD101961CE8C0036F9FB /* GNCreateBetView.swift */,
 			);
@@ -382,7 +382,7 @@
 				87B658B4195FEA6400AD00D6 /* GNCreateBetViewController.swift in Sources */,
 				87B658A9195FDCCB00AD00D6 /* Bet.swift in Sources */,
 				879BCD111961CE8C0036F9FB /* GNCreateBetView.swift in Sources */,
-				87B658B6195FEB6D00AD00D6 /* CNCreateBetViewManual.swift in Sources */,
+				87B658B6195FEB6D00AD00D6 /* GNCreateBetViewManual.swift in Sources */,
 				87B658AB195FDE7100AD00D6 /* GNMockAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
