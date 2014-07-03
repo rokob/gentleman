@@ -13,8 +13,8 @@ class GNCreateBetViewController: UIViewController {
   }
 
   override func loadView() {
-    var view: UIView = GNCreateBetViewManual(user: user)
-    //var view: UIView = GNCreateBetView(user: user)
+    //var view: UIView = GNCreateBetViewManual(user: user)
+    var view: UIView = GNCreateBetView(user: user)
     self.view = view
   }
 

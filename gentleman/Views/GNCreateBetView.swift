@@ -6,6 +6,7 @@ class GNCreateBetView: UIView, UITextViewDelegate {
 
   var user: User!
 
+  @IBOutlet var contentView: UIScrollView!
   @IBOutlet var opponentLabel: UILabel!
   @IBOutlet var opponentButton: UIButton!
   @IBOutlet var dateLabel: UILabel!
@@ -37,4 +38,15 @@ class GNCreateBetView: UIView, UITextViewDelegate {
     addSubview(nib.instantiateWithOwner(self, options: nil)[0] as UIView)
   }
 
+  func textViewDidBeginEditing(textView: UITextView!) {
+    UIView.animateWithDuration(0.35) {
+      self.contentView.contentOffset = CGPointMake(0, 20.0)
+    }
+  }
+
+  func textViewDidEndEditing(textView: UITextView!) {
+    UIView.animateWithDuration(0.35) {
+      self.contentView.contentOffset = CGPointMake(0, 0)
+    }
+  }
 }
