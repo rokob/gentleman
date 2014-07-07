@@ -2,6 +2,12 @@
 
 import UIKit
 
+@objc protocol GNCreateBetViewResponder {
+  func didTapOpponentButton()
+  func didTapDateButton()
+  func didTapSubmitButton()
+}
+
 class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
 
   struct Subviews {
@@ -28,6 +34,8 @@ class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
 
   let user: User
   let views: Subviews?
+  var initialOffset: CGPoint?
+  weak var responder: GNCreateBetViewResponder?
 
   init(user: User) {
     self.user = user
@@ -47,10 +55,12 @@ class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
     opponentLabel.text = "Opponent"
     var opponentButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
     opponentButton.setTitle("Select...", forState: UIControlState.Normal)
+    opponentButton.addTarget(self, action: Selector("didTapOpponentButton"), forControlEvents: .TouchUpInside)
     var dateLabel = UILabel(frame: CGRectZero)
     dateLabel.text = "Date"
     var dateButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
     dateButton.setTitle("Select...", forState: UIControlState.Normal)
+    dateButton.addTarget(self, action: Selector("didTapDateButton"), forControlEvents: .TouchUpInside)
     var eventLabel = UILabel(frame: CGRectZero)
     eventLabel.text = "You bet that"
     var eventTextField = UITextView(frame: CGRectZero)
@@ -59,6 +69,7 @@ class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
     eventTextField.backgroundColor = UIColor(white: 0.99, alpha: 1.0)
     var submitButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
     submitButton.setTitle("Submit", forState: UIControlState.Normal)
+    submitButton.addTarget(self, action: Selector("didTapSubmitButton"), forControlEvents: .TouchUpInside)
 
     return Subviews(opponentLabel: opponentLabel,
       opponentNameButton: opponentButton,
@@ -72,6 +83,7 @@ class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
   override func layoutSubviews() {
     var frame = self.bounds
     self.contentSize = CGSizeMake(frame.width, frame.height)
+    initialOffset = initialOffset ? initialOffset : self.contentOffset
     var maxSize = CGSizeMake(frame.width, CGFLOAT_MAX)
     var size = self.views!.opponentLabel.sizeThatFits(maxSize)
     var leftPadding: CGFloat = 16
@@ -91,7 +103,6 @@ class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
     self.views!.dateValueButton.sizeToFit()
     scratchRect = self.views!.dateValueButton.frame
     self.views!.dateLabel.frame = CGRectMake(x, y, size.width, scratchRect.height)
-    // x = self.views!.dateLabel.frame.maxX + xPadding
     x = self.views!.opponentNameButton.frame.origin.x
     self.views!.dateValueButton.frame = CGRectMake(x, y, scratchRect.width, scratchRect.height)
     x = leftPadding
@@ -104,6 +115,7 @@ class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
     y = self.views!.eventTextField.frame.maxY + yPadding / 4
     self.views!.submitButton.sizeToFit()
     scratchRect = self.views!.submitButton.frame
+    x = self.views!.eventTextField.frame.maxX - scratchRect.width
     self.views!.submitButton.frame = CGRectMake(x, y, scratchRect.width, scratchRect.height)
   }
 
@@ -111,6 +123,24 @@ class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
     UIView.animateWithDuration(0.35) {
       self.contentOffset = CGPointMake(0, 20.0)
     }
+  }
+
+  func textViewDidEndEditing(textView: UITextView!) {
+    UIView.animateWithDuration(0.35) {
+      self.contentOffset = self.initialOffset!
+    }
+  }
+
+  func didTapOpponentButton() {
+    responder?.didTapOpponentButton()
+  }
+
+  func didTapDateButton() {
+    responder?.didTapDateButton()
+  }
+
+  func didTapSubmitButton() {
+    responder?.didTapSubmitButton()
   }
 
 }

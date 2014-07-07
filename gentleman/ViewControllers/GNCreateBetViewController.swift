@@ -2,7 +2,7 @@
 
 import UIKit
 
-class GNCreateBetViewController: UIViewController {
+class GNCreateBetViewController: UIViewController, GNCreateBetViewResponder {
 
   var user: User
 
@@ -13,9 +13,22 @@ class GNCreateBetViewController: UIViewController {
   }
 
   override func loadView() {
-    //var view: UIView = GNCreateBetViewManual(user: user)
-    var view: UIView = GNCreateBetView(user: user)
+    var view: GNCreateBetViewManual = GNCreateBetViewManual(user: user)
+    view.responder = self
+    //var view: UIView = GNCreateBetView(user: user)
     self.view = view
+  }
+
+  func didTapOpponentButton() {
+    println(__FILE__, __LINE__)
+  }
+
+  func didTapDateButton() {
+    println(__FILE__, __LINE__)
+  }
+
+  func didTapSubmitButton() {
+    println(__FILE__, __LINE__)
   }
 
 }

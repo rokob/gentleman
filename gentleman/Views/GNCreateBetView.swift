@@ -35,7 +35,8 @@ class GNCreateBetView: UIView, UITextViewDelegate {
     self.user = user
     super.init(frame: CGRectZero)
     var nib = UINib(nibName: "GNCreateBetView", bundle: NSBundle.mainBundle())
-    addSubview(nib.instantiateWithOwner(self, options: nil)[0] as UIView)
+    var views = nib.instantiateWithOwner(self, options: nil)
+    addSubview(views[0] as UIView)
   }
 
   func textViewDidBeginEditing(textView: UITextView!) {
