@@ -8,7 +8,7 @@ import UIKit
   func didTapSubmitButton()
 }
 
-class GNCreateBetViewManual: UIScrollView, UITextViewDelegate {
+class GNCreateBetView: UIScrollView, UITextViewDelegate {
 
   struct Subviews {
     let opponentLabel: UILabel
