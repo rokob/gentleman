@@ -4,16 +4,30 @@ import Foundation
 
 class GNMockAPI {
 
-  class func users() -> Dictionary<String, AnyObject!>[] {
-    return arrayFromFile("users")
+  class func users() -> User[] {
+    return arrayFromFile("users").map(User.fromJSON)
   }
 
-  class func friends(user: User) -> Dictionary<String, AnyObject!>[] {
+  class func user(#id: String) -> User? {
+    var all_users = users()
+    return all_users.reduce(nil, combine: {(found: User?, this: User) -> User? in
+      if found {
+        return found
+      }
+      if this.id == id {
+        return this
+      }
+      return nil
+    })
+  }
+
+  class func friends(user: User) -> User[] {
     var all_user_friends = objectFromFile("friends")
     if let friends_for_this_user: AnyObject! = all_user_friends[user.id] {
-      return friends_for_this_user as Dictionary<String, AnyObject!>[]
+      var result = friends_for_this_user as Dictionary<String, AnyObject!>[]
+      return result.map(User.fromJSON)
     } else {
-      return [[:]]
+      return []
     }
   }
 

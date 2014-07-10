@@ -22,4 +22,8 @@ struct Bet {
   let creator_claim: Winner?
   let opponent_claim: Winner?
   let winner_id: String?
+
+//  static func fromJSON(dict: Dictionary<String, AnyObject!>) -> Bet {
+//
+//  }
 }

@@ -19,14 +19,17 @@ class GNCreateBetViewController: UIViewController, GNCreateBetViewResponder {
   }
 
   func didTapOpponentButton() {
+    // Create view controller to search friends and push
     println(__FILE__, __LINE__)
   }
 
   func didTapDateButton() {
+    // Create Date picker and show
     println(__FILE__, __LINE__)
   }
 
   func didTapSubmitButton() {
+    // Create bet, send to server, move to feed
     println(__FILE__, __LINE__)
   }
 
